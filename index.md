@@ -27,3 +27,5 @@ Updated: August 7, 2023 8:11 AM
 11. Pay by cash/debit not by credit card. Plan ahead
 
 [invest](invest.md)
+
+[fullness](fullness.md)
