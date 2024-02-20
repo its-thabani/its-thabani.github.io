@@ -16,11 +16,75 @@
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvoloskov/potion/potion.min.css">
 
 	</head>
+	<style>
+		.highlight-pink {
+			color: rgba(193, 76, 138, 1);
+			fill: rgba(193, 76, 138, 1);
+		}
+		.highlight-purple {
+			color: rgba(144, 101, 176, 1);
+			fill: rgba(144, 101, 176, 1);
+		}
+		.highlight-teal {
+			color: rgb(9, 158, 169, 1);
+			fill: rgba(9, 158, 169, 1);
+		}
+		.highlight-dpink {
+			color: rgb(142, 14, 82, 1);
+			fill: rgba(142, 14, 82, 1);
+		}
+		
+		.main {
+			font-size: 1.875rem;
+			margin-top: 1.875rem;
+			padding-top: 0;
+		}
+		mark {
+			background-color: inherit !important;
+		}
+		.shade-card {
+			background: rgba(244, 240, 247, 0.8);
+			margin: auto;
+			width: 40%;
+			padding: 1.3em;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			margin-top: 20px;
+		}
+		.main-sub {
+			font-family: monospace;
+		}
+	</style>
 	<body>
 		<div class="container">
 			<div class="text-center">
-				<img src="assets/images/profile.jpg" class="rounded-circle mx-auto d-block img-fluid" alt="Thabani">
-				
+				<img src="assets/images/avatar.png" class="rounded-circle mx-auto d-block img-fluid" alt="Thabani">
+				<h1 class="main">
+					<strong>
+					Hi, my name is <mark class="highlight-pink"><strong>Thabani</strong></mark>.
+					</strong>
+				</h1>
+				<p class="main-sub">
+					I am a 
+					<strong>
+						<mark class="highlight-purple"><em>software developer</em></mark></strong>, <strong><mark class="highlight-teal"><em>engineer</em></mark></strong> &amp; 
+					<strong><mark class="highlight-dpink"><em>musician</em></mark></strong> in York.
+				</p>
+				<div class="shade-card">
+					<span class="fa-bookmark"></span><span class="highlight-pink">Blog</span>
+				</div>
+				<div class="shade-card">
+					<span class="fa-graduation-cap"></span><span class="highlight-pink">CV</span>
+				</div>
+				<div class="shade-card">
+					<span class="fa-youtube-play"></span><span class="highlight-pink">Youtube</span>
+				</div>
+				<div class="shade-card">
+					<span class="fa-music"></span><span class="highlight-pink">Fiverr</span>
+				</div>
+				<div class="shade-card">
+					<span class="fa-file"></span><span class="highlight-pink">Sharepanel</span>
+				</div>
 			</div>
 		</div>
 	</body>
