@@ -1,17 +1,17 @@
 <html>
 	<head>
 		<title>@intersect</title>
-	
+
 		<!-- jquery -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-		
+
 		<!-- fontawesome -->
 		<script src="https://kit.fontawesome.com/40ff28c56e.js" crossorigin="anonymous"></script>
-		
+
 		<!-- bootstrap -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-		
+
 		<!-- notion css -->
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvoloskov/potion/potion.min.css">
 
@@ -33,7 +33,7 @@
 			color: rgb(142, 14, 82, 1);
 			fill: rgba(142, 14, 82, 1);
 		}
-		
+
 		.main {
 			font-size: 1.875rem;
 			margin-top: 1.875rem;
@@ -45,7 +45,7 @@
 		.shade-card {
 			background: rgba(244, 240, 247, 0.8);
 			margin: auto;
-			width: 40%;
+			width: 50%;
 			padding: 1.3em;
 			border-radius: 5px;
 			margin-bottom: 20px;
@@ -54,6 +54,32 @@
 		.main-sub {
 			font-family: monospace;
 		}
+		.name {
+			overflow: hidden;
+			border-right: .15em solid purple;
+			white-space: nowrap;
+			/* margin: 0 auto; */
+			letter-spacing: .15em;
+			animation:
+				typing 3s steps(7, end),
+				blink-caret .75s step-end infinite;
+		}
+
+		@keyframes typing {
+			from {width: 0;}
+			to {width: 100%;}
+		}
+
+		@keyframes blink-caret {
+			from, to {border-color: transparent;}
+			50% {border-color: purple;}
+		}
+
+		@media only screen and (max-width: 768px) {
+			.shade-card {
+				width: 70%;
+			}
+		}
 	</style>
 	<body>
 		<div class="container">
@@ -61,29 +87,34 @@
 				<img src="assets/images/avatar.png" class="rounded-circle mx-auto d-block img-fluid" alt="Thabani">
 				<h1 class="main">
 					<strong>
-					Hi, my name is <mark class="highlight-pink"><strong>Thabani</strong></mark>.
+					Hi, my name is <mark class="highlight-pink name"><strong>Thabani</strong></mark>.
 					</strong>
 				</h1>
 				<p class="main-sub">
-					I am a 
+					I like learning about a bunch of things:<br>
 					<strong>
-						<mark class="highlight-purple"><em>software developer</em></mark></strong>, <strong><mark class="highlight-teal"><em>engineer</em></mark></strong> &amp; 
-					<strong><mark class="highlight-dpink"><em>musician</em></mark></strong> in York.
+						<mark class="highlight-purple"><em>software development</em></mark></strong>, <strong><mark class="highlight-teal"><em>engineering</em></mark></strong>, 
+					<strong><mark class="highlight-dpink"><em>music</em></mark></strong> ...
 				</p>
 				<div class="shade-card">
-					<span class="fa-bookmark"></span><span class="highlight-pink">Blog</span>
+					<a href="pages/blog">
+						<span class="fa-regular fa-bookmark"></span><span class="highlight-pink">Blog</span>
+					</a>
 				</div>
 				<div class="shade-card">
-					<span class="fa-graduation-cap"></span><span class="highlight-pink">CV</span>
+					<a href="pages/resume">
+						<span class="fa-regular fa-graduation-cap"></span><span class="highlight-pink">R&#233;sum&#233;</span>
+					</a>
 				</div>
 				<div class="shade-card">
-					<span class="fa-youtube-play"></span><span class="highlight-pink">Youtube</span>
+					<a href="https://www.youtube.com/channel/UC1RL_q_ME_sDOJQ7JxKyVcQ" target="_blank">
+						<span class="fa-regular fa-youtube-play"></span><span class="highlight-pink">Youtube</span>
+					</a>
 				</div>
 				<div class="shade-card">
-					<span class="fa-music"></span><span class="highlight-pink">Fiverr</span>
-				</div>
-				<div class="shade-card">
-					<span class="fa-file"></span><span class="highlight-pink">Sharepanel</span>
+					<a href="https://www.fiverr.com/itsjustme75" target="_blank">
+						<span class="fa-regular fa-music"></span><span class="highlight-pink">Music arranging</span>
+					</a>
 				</div>
 			</div>
 		</div>
