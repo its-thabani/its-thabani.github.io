@@ -12,112 +12,35 @@
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-		<!-- notion css 
+		<!-- notion css
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvoloskov/potion/potion.min.css"> -->
 
+		<!-- main styling-->
+		<link rel="stylesheet" href="assets/css/main.css"
 	</head>
-	<style>
-		.highlight-pink {
-			color: rgba(193, 76, 138, 1);
-			fill: rgba(193, 76, 138, 1);
-		}
-		.highlight-purple {
-			color: rgba(144, 101, 176, 1);
-			fill: rgba(144, 101, 176, 1);
-		}
-		.highlight-teal {
-			color: rgb(9, 158, 169, 1);
-			fill: rgba(9, 158, 169, 1);
-		}
-		.highlight-dpink {
-			color: rgb(142, 14, 82, 1);
-			fill: rgba(142, 14, 82, 1);
-		}
-
-		.main {
-			font-size: 1.875rem;
-			margin-top: 1.875rem;
-			padding-top: 0;
-		}
-		mark {
-			background-color: inherit !important;
-		}
-		.shade-card {
-			background: rgba(244, 240, 247, 0.8);
-			margin: auto;
-			width: 40%;
-			padding: 1.3em;
-			border-radius: 5px;
-			margin-bottom: 20px;
-			margin-top: 20px;
-			box-shadow: 0 11px 8px -10px rgba(51, 51, 51, 0.4), 0 -11px 8px -10px rgba(5, 51, 51, 0.1);
-		}
-		.main-sub {
-			font-family: monospace;
-		}
-		.top-img {
-			max-height: 250px;
-		}
-		.shade-card .icon {
-			padding: 0 10px;
-			font-size: 1.2em;
-			color: purple;
-		}
-		.shade-card .link {
-			font-weight: 500;
-			font-size: 1.1em;
-		}
-		.card-link {
-			text-decoration: none;
-			cursor: pointer;
-		}
-		.name {
-			overflow: hidden;
-			border-right: .15em solid purple;
-			white-space: nowrap;
-			/* margin: 0 auto; */
-			letter-spacing: .15em;
-			animation:
-				typing 4s steps(22, end),
-				blink-caret .75s step-end infinite;
-		}
-		@keyframes typing {
-			from {width: 0;}
-			to {width: 100%;}
-		}
-
-		@keyframes blink-caret {
-			from, to {border-color: transparent;}
-			50% {border-color: purple;}
-		}
-
-		@media only screen and (max-width: 768px) {
-			.shade-card {
-				width: 70%;
-			}
-		}
-	</style>
 	<body>
-		<div class="container">
+		<div class="container home">
 			<div class="text-center">
 				<img src="assets/images/avatar.png" class="rounded-circle mx-auto d-block img-fluid top-img" alt="Thabani">
-				<h1 class="main">
-					<strong class="name">
-					Hi, my name is <mark class="highlight-pink"><strong>Thabani</strong></mark>.
-					</strong>
-				</h1>
+				<div class="typewriter">
+					<h1 class="main">
+						<strong class="name">
+						Hi, my name is <mark class="highlight-pink"><strong>Thabani</strong></mark>.
+						</strong>
+					</h1>
+				</div>
 				<p class="main-sub">
 					I like learning about a bunch of things:<br>
 					<strong><mark class="highlight-purple"><em>software development</em></mark></strong>,<strong><mark class="highlight-teal"><em>engineering</em></mark></strong>,<strong><mark class="highlight-dpink"><em>music</em></mark></strong> ...
 				</p>
-				<a href="pages/blog" class="card-link">
+				<a href="pages/blog/blog.html" class="card-link">
 					<div class="shade-card">
 						<div class="inner">
 								<span class="icon fa-solid fa-book-open"></span><span class="link highlight-pink">Blog</span>
 						</div>
 					</div>
 				</a>
-				<a href="pages/resume" class="card-link">
+				<a href="pages/resume/resume.html" class="card-link">
 					<div class="shade-card">
 						<div class="inner">
 								<span class="icon fa-solid fa-file-lines"></span><span class="link highlight-pink">R&#233;sum&#233;</span>

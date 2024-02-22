@@ -1,0 +1,134 @@
+.highlight-pink {
+    color: rgba(193, 76, 138, 1);
+    fill: rgba(193, 76, 138, 1);
+}
+.highlight-purple {
+    color: rgba(144, 101, 176, 1);
+    fill: rgba(144, 101, 176, 1);
+}
+.highlight-teal {
+    color: rgb(9, 158, 169, 1);
+    fill: rgba(9, 158, 169, 1);
+}
+.highlight-dpink {
+    color: rgb(142, 14, 82, 1);
+    fill: rgba(142, 14, 82, 1);
+}
+
+.home .main {
+    font-size: 1.875rem;
+    margin-top: 1.875rem;
+    padding-top: 0;
+}
+mark {
+    background-color: inherit !important;
+}
+.home .shade-card {
+    background: rgba(244, 240, 247, 0.8);
+    margin: auto;
+    width: 40%;
+    padding: 1.3em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 4px 3px -3px #ccc;
+}
+.home .main-sub {
+    font-family: monospace;
+}
+.home .top-img {
+    max-height: 250px;
+}
+.home .shade-card .icon {
+    padding: 0 10px;
+    font-size: 1.2em;
+    color: purple;
+}
+.home .shade-card .link {
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.home .card-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.blog .home-icon {
+    max-width: 8em;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -3em;
+}
+
+.blog .header {
+    text-align: left;
+}
+
+.blog .category .badge {
+    margin-right: 1em;
+}
+
+.blog .alt1 {
+    background-color: #085A58 !important;
+}
+
+.blog .alt2 {
+    background-color: #6A2135 !important;
+}
+
+.blog .alt3 {
+    background-color: #0D7511 !important;
+}
+
+.blog .alt4 {
+    background-color: #D96628 !important;
+}
+
+.blog .alt5 {
+    background-color: #162A82 !important;
+}
+
+.blog .alt6 {
+    background-color: #6B1682 !important;
+}
+
+
+.blog .cards {
+    margin: auto;
+}
+
+.blog .cards .card {
+    border-radius: 5px;
+    border: 1px solid black;
+    box-shadow: 9px 9px 5px -5px #ccc;
+}
+
+.divider {
+    border: none;
+    padding: 2px 0;
+    padding-top: 0.2em;
+    border-bottom: 1px solid black;
+    max-width: 70%;
+    margin: 0px ;
+    margin-bottom: 3em;
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typewriter 3s steps(23, end), blink-caret .75s step-end infinite;
+}
+@keyframes typewriter {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .home .shade-card {
+        width: 70%;
+    }
+}
