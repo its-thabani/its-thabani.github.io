@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Voicings generator</title>
+        <meta charset="UTF-8">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!-- fontawesome -->
+        <script src="https://kit.fontawesome.com/40ff28c56e.js" crossorigin="anonymous"></script>
+
+        <!-- bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+        <!-- notion css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mvoloskov/potion/potion.min.css">
+
+        <!-- main styling-->
+        <link rel="stylesheet" href="../../assets/css/main.css">
+    </head>
+    <body class="blog-page" style="text-align: justify">
+        <div class="container">
+            <div class="home-icon">
+                <a href="../../index.html">
+                    <img src="../../assets/images/avatar.png" class="rounded-circle mx-auto d-block img-fluid top-img" alt="Thabani">
+                </a>
+            </div>
+            <header>
+                <!-- Top image (optional) -->
+                <div class="icon">🎹</div>
+                <h1>Jazz voicings generator</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                       I enjoy arranging music (from vocal ensembles, quartets, jazz, big band…). One key concept in arranging, especially for voice, is <strong><em>voice leading</em></strong>. Voice leading means that if you are writing a melodic line, you want to minimise jumping around but use the closest notes around you whilst still getting your target note. Voice leading is not just used for vocal arranging but even in the instrument world. If playing a jazz solo on trumpet and you’re thinking of a hip line, it’ll will sound way better with some voice leading. A sax soli in a band, the voicings will sound better if there’s voice leading. If you play organ, especially gospel organ, voice leading will provide minimal movement, making it sound better.
+                    </p>
+                    <p>
+                        So how does it work? Let’s say you are arranging a song for a trio and part of song, the chords are <code>C Major</code> and then <code>F Major</code>. On piano, one could play them in their root positions.
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p><em>don't judge my piano diagrams'</em></p>
+                    <img src="../../assets/images/voicings1.jpeg" class="img fluid piano-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>This works, for instruments, however, if it was voices, it would mean the top part is going from a <code>G</code> to a <code>C</code>(a interval of a fourth) and same applies to the other 2 parts. If we change the inversion of the <code>F Major</code> chord to 2nd inversion, then there’s minimal movement.</p>
+                    <img src="../../assets/images/voicings2.jpeg" class="img fluid piano-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>This means the top part will be moving from a <code>G</code> to an <code>A</code> (just a tone), 2nd part from <code>E</code> to an <code>F</code> (semitone) and bottom part stays where it was. Imagine the process applied to an entire line of a song instead of just 2 chords, and that’s voice leading.</p>
+                    <p>
+                    Okay, enough about the boring music theory lesson. I like coding and I had free time on my hands. I discovered the <code class="c-blue">midiutil</code> python module which allows you to generate &/ analyse midis. I decided one afternoon to create a voicing generator of sorts. The idea is that you enter in a chord progression (basic 7th chords) and it can generate a 4 part voicings which involve voice leading as well as interesting jazz harmony. The idea was to incorporate 4 part substitutions to create sounds which may not be conventional but still work. (more on the idea of 4 part substitutions later)
+                    </p>
+                    <p>Here's a video of the program running:</p>
+                    
+                    <div class="vid-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/4pidixv-jly?si=LyPLiJAvM8zhYJl0&amp;start=940" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>I used a 6–2–5–1 progression as my input.</p>
+                    <p>The program generates the notes for the chord progression as well as a midi of how the progression would sound. See screenshot below:</p>
+                    <img src="../../assets/images/voicings_app.jpeg" class="img fluid screenshot">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        This was me just messing about with the library one afternoon, but I’m sure given enough time and ideas, a lot can be done with this. I’ll look into utilising this better in the future.
+                    </p>
+                    <p>
+                        <a href="https://github.com/thabani7/voicing_maker" target="_blank" class="link">Get the source code</a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
+

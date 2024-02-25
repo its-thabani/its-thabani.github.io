@@ -53,7 +53,7 @@ mark {
     cursor: pointer;
 }
 
-.blog .home-icon {
+.blog .home-icon, .blog-page .home-icon, .resume-page .home-icon {
     max-width: 8em;
     text-align: center;
     margin: 0 auto;
@@ -158,9 +158,8 @@ blockquote {
     padding: 2px 0;
     padding-top: 0.2em;
     border-bottom: 1px solid black;
-    max-width: 95%;
+    min-width: 100%;
     margin: 0px auto;
-    margin-bottom: 3em;
 }
 
 .typewriter h1 {
